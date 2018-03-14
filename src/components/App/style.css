@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+}
+
+.App {
+  font-family: Arial;
+  text-align: center;
+}
+
+.App-beer-logo {
+  height: 80px;
+  padding: 10px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 200px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.75em;
+  padding: 0px 0px 10px 0px;
+}
+
+.App-subtitle {
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
