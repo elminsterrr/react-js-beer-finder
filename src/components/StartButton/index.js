@@ -28,11 +28,13 @@ class StartButton extends Component {
     return (
       <div>
         <div className="StartButton-container">
-          <RaisedButton
-            label="Start Here"
-            className="StartButton-main"
-            onClick={this.handleStartButton}
-          />
+          {!this.state.startWasClicked && (
+            <RaisedButton
+              label="Start Here"
+              className="StartButton-main"
+              onClick={this.handleStartButton}
+            />
+          )}
         </div>
         {this.beerListingView()}
       </div>

@@ -9,13 +9,17 @@ describe('StartButton', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('renders `StartButton-container` children correctly', () => {
-    expect(wrapper.find('.StartButton-container').children().length).toEqual(1);
-  });
-
-  it('changes `state().startWasClicked` to `true` when clicking the `Start Here` button', () => {
+  describe('when clicking `Start Here` button', () => {
     wrapper.find('.StartButton-main').simulate('click');
 
-    expect(wrapper.state().startWasClicked).toBeTruthy();
+    it('changes `state().startWasClicked` to `true`', () => {
+      expect(wrapper.state().startWasClicked).toBeTruthy();
+    });
+
+    it('hides `Start Here` button', () => {
+      expect(wrapper.find('.StartButton-container').children().length).toEqual(
+        0
+      );
+    });
   });
 });
