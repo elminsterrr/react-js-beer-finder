@@ -21,7 +21,7 @@ ShallowWrapper {
         <div
           className="StartButton-container"
 />,
-        <BeerListing />,
+        <BeerListingEntry />,
       ],
     },
     "ref": null,
@@ -60,7 +60,7 @@ ShallowWrapper {
           <div
             className="StartButton-container"
 />,
-          <BeerListing />,
+          <BeerListingEntry />,
         ],
       },
       "ref": null,
