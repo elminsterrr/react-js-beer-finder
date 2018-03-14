@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import RaisedButton from 'material-ui/RaisedButton';
 import './style.css';
 
-import BeerListing from '../BeerListing';
+import BeerListingEntry from '../BeerListingEntry';
 
 class StartButton extends Component {
   constructor() {
@@ -19,7 +19,7 @@ class StartButton extends Component {
 
   beerListingView() {
     if (this.state.startWasClicked) {
-      return <BeerListing />;
+      return <BeerListingEntry />;
     }
     // Else return just single <div />
     return <div />;
