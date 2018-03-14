@@ -17,14 +17,6 @@ class StartButton extends Component {
     this.setState({ startWasClicked: true });
   };
 
-  beerListingView() {
-    if (this.state.startWasClicked) {
-      return <BeerListingEntry />;
-    }
-    // Else return just single <div />
-    return <div />;
-  }
-
   render() {
     return (
       <div>
@@ -37,7 +29,7 @@ class StartButton extends Component {
             />
           )}
         </div>
-        {this.beerListingView()}
+        {this.state.startWasClicked && <BeerListingEntry />}
       </div>
     );
   }
