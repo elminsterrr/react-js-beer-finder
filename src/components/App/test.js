@@ -9,7 +9,7 @@ describe('App', () => {
     expect(app).toMatchSnapshot();
   });
 
-  it('renders `App-start-button` children correctly', () => {
+  it('renders `App-start-button` children', () => {
     expect(app.find('.App-start-button').children().length).toEqual(1);
   });
 });

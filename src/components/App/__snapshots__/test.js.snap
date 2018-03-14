@@ -27,12 +27,12 @@ ShallowWrapper {
                         <h1
                                 className="App-title"
                         >
-                                The BEER Finder
+                                The Beer Finder
                         </h1>
                         <p
                                 className="App-subtitle"
                         >
-                                powered by the love for
+                                powered by love for
                         </p>
                         <img
                                 alt="logo"
@@ -61,12 +61,12 @@ ShallowWrapper {
                     <h1
                               className="App-title"
                     >
-                              The BEER Finder
+                              The Beer Finder
                     </h1>
                     <p
                               className="App-subtitle"
                     >
-                              powered by the love for
+                              powered by love for
                     </p>
                     <img
                               alt="logo"
@@ -95,12 +95,12 @@ ShallowWrapper {
               <h1
                             className="App-title"
               >
-                            The BEER Finder
+                            The Beer Finder
               </h1>
               <p
                             className="App-subtitle"
               >
-                            powered by the love for
+                            powered by love for
               </p>
               <img
                             alt="logo"
@@ -126,12 +126,12 @@ ShallowWrapper {
                 <h1
                   className="App-title"
 >
-                  The BEER Finder
+                  The Beer Finder
 </h1>,
                 <p
                   className="App-subtitle"
 >
-                  powered by the love for
+                  powered by love for
 </p>,
                 <img
                   alt="logo"
@@ -148,11 +148,11 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "The BEER Finder",
+                  "children": "The Beer Finder",
                   "className": "App-title",
                 },
                 "ref": null,
-                "rendered": "The BEER Finder",
+                "rendered": "The Beer Finder",
                 "type": "h1",
               },
               Object {
@@ -160,11 +160,11 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "powered by the love for",
+                  "children": "powered by love for",
                   "className": "App-subtitle",
                 },
                 "ref": null,
-                "rendered": "powered by the love for",
+                "rendered": "powered by love for",
                 "type": "p",
               },
               Object {
@@ -226,12 +226,12 @@ ShallowWrapper {
                               <h1
                                         className="App-title"
                               >
-                                        The BEER Finder
+                                        The Beer Finder
                               </h1>
                               <p
                                         className="App-subtitle"
                               >
-                                        powered by the love for
+                                        powered by love for
                               </p>
                               <img
                                         alt="logo"
@@ -260,12 +260,12 @@ ShallowWrapper {
                         <h1
                                     className="App-title"
                         >
-                                    The BEER Finder
+                                    The Beer Finder
                         </h1>
                         <p
                                     className="App-subtitle"
                         >
-                                    powered by the love for
+                                    powered by love for
                         </p>
                         <img
                                     alt="logo"
@@ -294,12 +294,12 @@ ShallowWrapper {
                 <h1
                                 className="App-title"
                 >
-                                The BEER Finder
+                                The Beer Finder
                 </h1>
                 <p
                                 className="App-subtitle"
                 >
-                                powered by the love for
+                                powered by love for
                 </p>
                 <img
                                 alt="logo"
@@ -325,12 +325,12 @@ ShallowWrapper {
                   <h1
                     className="App-title"
 >
-                    The BEER Finder
+                    The Beer Finder
 </h1>,
                   <p
                     className="App-subtitle"
 >
-                    powered by the love for
+                    powered by love for
 </p>,
                   <img
                     alt="logo"
@@ -347,11 +347,11 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "The BEER Finder",
+                    "children": "The Beer Finder",
                     "className": "App-title",
                   },
                   "ref": null,
-                  "rendered": "The BEER Finder",
+                  "rendered": "The Beer Finder",
                   "type": "h1",
                 },
                 Object {
@@ -359,11 +359,11 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "powered by the love for",
+                    "children": "powered by love for",
                     "className": "App-subtitle",
                   },
                   "ref": null,
-                  "rendered": "powered by the love for",
+                  "rendered": "powered by love for",
                   "type": "p",
                 },
                 Object {
