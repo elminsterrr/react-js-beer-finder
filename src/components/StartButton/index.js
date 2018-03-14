@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import RaisedButton from 'material-ui/RaisedButton';
-
 import './style.css';
+
+import BeerListing from '../BeerListing';
 
 class StartButton extends Component {
   constructor() {
@@ -18,7 +19,7 @@ class StartButton extends Component {
 
   beerListingView() {
     if (this.state.startWasClicked) {
-      return <div>YES! It was clicked!</div>;
+      return <BeerListing />;
     }
     // Else return just single <div />
     return <div />;
