@@ -5,17 +5,18 @@ import './style.css';
 import BeerListingEntry from '../../containers/BeerListingEntry';
 
 class StartApp extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       startWasClicked: false,
     };
+    this.handleStartApp = this.handleStartApp.bind(this);
   }
 
-  handleStartApp = () => {
+  handleStartApp() {
     this.setState({ startWasClicked: true });
-  };
+  }
 
   render() {
     return (
