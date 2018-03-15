@@ -5,17 +5,17 @@ import { fetchBeers } from '../../actions/';
 import './style.css';
 
 import ProgressIndicator from '../../components/ProgressIndicator';
+import BeerListingScroll from '../BeerListingScroll';
 
 class BeerListingEntry extends Component {
   componentDidMount() {
-    this.props.fetchBeers();
+    this.props.fetchBeers(1, 1);
   }
 
   render() {
     const { beers } = this.props;
-    const { error } = this.props;
 
-    if (!beers.length && !error) {
+    if (!beers.beersArray.length && !beers.errorMessage) {
       return (
         <div>
           <ProgressIndicator />
@@ -23,7 +23,7 @@ class BeerListingEntry extends Component {
       );
     }
 
-    if (error) {
+    if (beers.errorMessage) {
       return (
         <div>
           <p className="BeerListingEntry-sorry">
@@ -34,14 +34,13 @@ class BeerListingEntry extends Component {
       );
     }
 
-    return <div>Fetching is done!</div>;
+    return <BeerListingScroll />;
   }
 }
 
 function mapStateToProps(state) {
   return {
     beers: state.beers,
-    error: state.error,
   };
 }
 

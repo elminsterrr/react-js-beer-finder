@@ -1,13 +1,35 @@
-import { FETCH_BEERS } from '../actions';
+import { FETCH_REQUEST, FETCH_SUCCESS, FETCH_FAILURE } from '../actions';
 
-export default function(state = [], action) {
+const initialState = {
+  isFetching: false,
+  beersArray: [],
+  errorMessage: '',
+  skip: 0,
+  limit: 0,
+  hasMore: true,
+};
+
+export default function(state = initialState, action) {
   switch (action.type) {
-    case FETCH_BEERS:
-      if (action.payload.length === 0) {
-        return [...state, null];
-      }
-
-      return [...state, ...action.payload];
+    case FETCH_REQUEST:
+      return Object.assign({}, state, {
+        isFetching: true,
+        skip: action.skip,
+        limit: action.limit,
+        hasMore: true,
+      });
+    case FETCH_SUCCESS:
+      return Object.assign({}, state, {
+        isFetching: false,
+        beersArray: state.beersArray.concat(action.beers),
+        hasMore: action.hasMore,
+      });
+    case FETCH_FAILURE:
+      return Object.assign({}, state, {
+        isFetching: false,
+        errorMessage: action.errorMessage,
+        hasMore: false,
+      });
     default:
       return state;
   }
