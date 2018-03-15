@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import RaisedButton from 'material-ui/RaisedButton';
 import './style.css';
 
-import BeerListingEntry from '../BeerListingEntry';
+import BeerListingEntry from '../../containers/BeerListingEntry';
 
-class StartButton extends Component {
+class StartApp extends Component {
   constructor() {
     super();
 
@@ -13,19 +13,19 @@ class StartButton extends Component {
     };
   }
 
-  handleStartButton = () => {
+  handleStartApp = () => {
     this.setState({ startWasClicked: true });
   };
 
   render() {
     return (
       <div>
-        <div className="StartButton-container">
+        <div className="StartApp-container">
           {!this.state.startWasClicked && (
             <RaisedButton
               label="Start Here"
-              className="StartButton-main"
-              onClick={this.handleStartButton}
+              className="StartApp-main"
+              onClick={this.handleStartApp}
             />
           )}
         </div>
@@ -35,4 +35,4 @@ class StartButton extends Component {
   }
 }
 
-export default StartButton;
+export default StartApp;

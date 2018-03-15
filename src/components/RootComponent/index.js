@@ -1,8 +1,8 @@
 import React from 'react';
-import beerLogo from './beer.svg';
+import beerLogo from './icon/beer.svg';
 import './style.css';
 
-import StartButton from '../StartButton';
+import StartApp from '../StartApp';
 
 const RootComponent = () => (
   <div className="App">
@@ -12,8 +12,8 @@ const RootComponent = () => (
         <p className="App-subtitle">powered by love for</p>
         <img src={beerLogo} className="App-beer-logo" alt="logo" />
       </header>
-      <div className="App-start-button">
-        <StartButton />
+      <div className="App-start">
+        <StartApp />
       </div>
     </div>
   </div>

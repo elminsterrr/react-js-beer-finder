@@ -1,26 +1,17 @@
 import axios from 'axios';
 
-export const SEARCH_STARTED = 'SEARCH_STARTED';
-export const FETCH_BEER = 'FETCH_BEER';
+export const FETCH_BEERS = 'FETCH_BEERS';
 
-const myProxyServer = 'https://elminster-white-cors-anywhere.herokuapp.com/';
-const appID = 'a7f201cb';
-const appKey = 'a1c054c16e7240f958694b6f821336aa';
+export function fetchBeers() {
+  const url = `https://api.punkapi.com/v2/beers?brewed_before=11-2012&abv_gt=6`;
 
-export function searchStarted() {
-  return {
-    type: SEARCH_STARTED,
-    payload: true,
-  };
-}
-
-export function fetchRecipesAndPage(ingredients, page) {
-  const url = `${myProxyServer}https://api.edamam.com/search?q=${ingredients}
-  &app_id=${appID}&app_key=${appKey}&from=${page}&to=${page + 99}`;
   const request = axios.get(url);
+
   return dispatch => {
     request.then(({ data }) => {
-      dispatch({ type: FETCH_BEER, payload: data });
+      setTimeout(() => {
+        dispatch({ type: FETCH_BEERS, payload: data });
+      }, 2000);
     });
     // .catch(error => {});
   };

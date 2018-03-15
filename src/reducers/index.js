@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import FetchBeerReducer from './reducer_fetch_beer';
+import FetchBeersReducer from './reducer_fetch_beers';
 
 const rootReducer = combineReducers({
-  beer: FetchBeerReducer,
+  beers: FetchBeersReducer,
 });
 
 export default rootReducer;

@@ -1,12 +1,14 @@
 import React from 'react';
 import CircularProgress from 'material-ui/CircularProgress';
 
-// import './style.css';
+import './style.css';
 
 const ProgressIndicator = () => (
-  <div className="ProgressIndicator-div">
-    Searching...
-    <CircularProgress size={60} thickness={7} />
+  <div className="ProgressIndicator-container">
+    Fetching beers...
+    <div className="ProgressIndicator-circular-progress">
+      <CircularProgress size={70} thickness={8} />
+    </div>
   </div>
 );
 

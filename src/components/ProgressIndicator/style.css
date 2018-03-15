@@ -1,5 +1,9 @@
-.ProgressIndicator-div {
+.ProgressIndicator-container {
   width: 15%;
-  margin: 0 auto;
+  margin: 25px auto 0 auto;
   text-align: center;
+}
+
+.ProgressIndicator-circular-progress {
+  margin-top: 25px;
 }
