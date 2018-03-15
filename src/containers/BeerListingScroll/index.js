@@ -3,7 +3,9 @@ import ReduxLazyScroll from 'redux-lazy-scroll';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { fetchBeers } from '../../actions/';
+
 import BeersListItem from '../../components/BeersListItem';
+import ProgressIndicator from '../../components/ProgressIndicator';
 
 class BeerListingScroll extends Component {
   constructor(props) {
@@ -32,11 +34,7 @@ class BeerListingScroll extends Component {
         <div className="row beers-lazy-scroll__messages">
           {isFetching && (
             <div className="alert alert-info">
-              Loading more beers...<br />
-              Loading more beers...<br />
-              Loading more beers...<br />
-              Loading more beers...<br />
-              Loading more beers...<br />
+              <ProgressIndicator />
             </div>
           )}
 

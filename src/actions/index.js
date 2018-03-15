@@ -13,10 +13,6 @@ export const fetchSuccess = beers => ({
   type: FETCH_SUCCESS,
   beers,
   hasMore: beers.length > 0,
-  // You can either make an additional request to check
-  // whether there are still items left to fetch
-  // or return a hasMore property with a response
-  // from the api to instantly get info about it.
 });
 
 export const requestFetch = (skip, limit) => ({
