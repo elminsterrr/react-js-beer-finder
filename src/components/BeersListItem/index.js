@@ -8,7 +8,11 @@ function BeerListItem(props) {
     <div>
       <Card raised className="BeerListItem-main-card">
         <CardContent>
-          <img src={props.beer.image_url} alt="beer" className="BeerListItem-img" />
+          <img
+            src={props.beer.image_url}
+            alt="beer"
+            className="BeerListItem-img"
+          />
           <Typography variant="headline" component="h2">
             {props.beer.name}
           </Typography>

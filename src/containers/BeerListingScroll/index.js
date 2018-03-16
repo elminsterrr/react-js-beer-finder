@@ -69,11 +69,3 @@ function mapDispatchToProps(dispatch) {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(BeerListingScroll);
-
-// export default compose(
-//   withStyles(styles, {
-//     name: 'AppFrame',
-//   }),
-//   withWidth(),
-//   connect(),
-// )(AppFrame);

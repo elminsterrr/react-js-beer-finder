@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { fetchBeers } from '../../actions/';
-import './style.css';
 
 import ProgressIndicator from '../../components/ProgressIndicator';
+import ErrorMessage from '../../components/ErrorMessage';
 import BeerListingScroll from '../BeerListingScroll';
 
 class BeerListingEntry extends Component {
@@ -24,14 +24,7 @@ class BeerListingEntry extends Component {
     }
 
     if (beers.errorMessage) {
-      return (
-        <div>
-          <p className="BeerListingEntry-sorry">
-            Sorry, there was an error while fetching data.
-          </p>
-          <p>Please try again later.</p>
-        </div>
-      );
+      return <ErrorMessage />;
     }
 
     return <BeerListingScroll />;

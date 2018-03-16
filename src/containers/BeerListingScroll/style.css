@@ -18,8 +18,6 @@
   width: 320px;
 }
 
-
-/* This applies from 600px onwards */
 @media (min-width: 1820px) {
   .BeerListingScroll-wrapper {
     margin: 0 400px;
