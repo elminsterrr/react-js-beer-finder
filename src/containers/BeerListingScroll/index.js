@@ -7,6 +7,8 @@ import { fetchBeers } from '../../actions/';
 import BeersListItem from '../../components/BeersListItem';
 import ProgressIndicator from '../../components/ProgressIndicator';
 
+import './style.css';
+
 class BeerListingScroll extends Component {
   constructor(props) {
     super(props);
@@ -29,7 +31,13 @@ class BeerListingScroll extends Component {
           loadMore={this.loadBeers}
           hasMore={hasMore}
         >
-          {beersArray.map(beer => <BeersListItem key={beer.id} beer={beer} />)}
+          <div className="BeerListingScroll-wrapper">
+            {beersArray.map(beer => (
+              <div key={beer.id} className="BeerListingScroll-info-box">
+                <BeersListItem beer={beer} />
+              </div>
+            ))}
+          </div>
         </ReduxLazyScroll>
         <div className="row beers-lazy-scroll__messages">
           {isFetching && (

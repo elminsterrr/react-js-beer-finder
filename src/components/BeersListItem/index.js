@@ -1,14 +1,22 @@
 import React from 'react';
+import Card, { CardContent } from 'material-ui/Card';
+import Typography from 'material-ui/Typography';
+import './style.css';
 
-const BeerListItem = ({ beer }) => (
-  <div className="col-md-3 beers-lazy-scroll__item" key={beer._id}>
-    <article className="panel panel-success">
-      <header className="panel-heading">
-        <h2 className="panel-title"> {beer.name} </h2>
-      </header>
-      <p className="panel-body"> {beer.tagline} </p>
-    </article>
-  </div>
-);
+function BeerListItem(props) {
+  return (
+    <div>
+      <Card raised className="BeerListItem-main-card">
+        <CardContent>
+          <img src={props.beer.image_url} alt="beer" className="BeerListItem-img" />
+          <Typography variant="headline" component="h2">
+            {props.beer.name}
+          </Typography>
+          <Typography component="p">{props.beer.tagline}</Typography>
+        </CardContent>
+      </Card>
+    </div>
+  );
+}
 
 export default BeerListItem;

@@ -12,24 +12,27 @@ const initialState = {
 export default function(state = initialState, action) {
   switch (action.type) {
     case FETCH_REQUEST:
-      return Object.assign({}, state, {
+      return {
+        ...state,
         isFetching: true,
         skip: action.skip,
         limit: action.limit,
         hasMore: true,
-      });
+      };
     case FETCH_SUCCESS:
-      return Object.assign({}, state, {
+      return {
+        ...state,
         isFetching: false,
-        beersArray: state.beersArray.concat(action.beers),
+        beersArray: [...state.beersArray, ...action.beers],
         hasMore: action.hasMore,
-      });
+      };
     case FETCH_FAILURE:
-      return Object.assign({}, state, {
+      return {
+        ...state,
         isFetching: false,
         errorMessage: action.errorMessage,
         hasMore: false,
-      });
+      };
     default:
       return state;
   }
