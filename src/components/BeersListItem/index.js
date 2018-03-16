@@ -6,7 +6,7 @@ const BeerListItem = ({ beer }) => (
       <header className="panel-heading">
         <h2 className="panel-title"> {beer.name} </h2>
       </header>
-      <p className="panel-body"> {beer.description} </p>
+      <p className="panel-body"> {beer.tagline} </p>
     </article>
   </div>
 );
