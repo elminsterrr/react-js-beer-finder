@@ -17,8 +17,8 @@ class BeerListingScroll extends Component {
   }
 
   loadBeers() {
-    const { skip, limit } = this.props.beers;
-    this.props.fetchBeers(skip, limit);
+    const { page, limit } = this.props.beers;
+    this.props.fetchBeers(page, limit);
   }
 
   render() {

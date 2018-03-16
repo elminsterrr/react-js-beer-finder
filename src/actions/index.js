@@ -4,9 +4,10 @@ export const FETCH_REQUEST = 'FETCH_REQUEST';
 export const FETCH_SUCCESS = 'FETCH_SUCCESS';
 export const FETCH_FAILURE = 'FETCH_FAILURE';
 
-export const requestError = error => ({
-  type: FETCH_FAILURE,
-  errorMessage: error,
+export const requestFetch = (page, limit) => ({
+  type: FETCH_REQUEST,
+  page: page + limit,
+  limit,
 });
 
 export const fetchSuccess = beers => ({
@@ -15,17 +16,16 @@ export const fetchSuccess = beers => ({
   hasMore: beers.length > 0,
 });
 
-export const requestFetch = (skip, limit) => ({
-  type: FETCH_REQUEST,
-  skip: skip + limit,
-  limit,
+export const requestError = error => ({
+  type: FETCH_FAILURE,
+  errorMessage: error,
 });
 
-export function fetchBeers(skip, limit) {
+export function fetchBeers(page, limit) {
   return dispatch => {
-    dispatch(requestFetch(skip, limit));
+    dispatch(requestFetch(page, limit));
     return axios
-      .get(`https://api.punkapi.com/v2/beers?page=${skip}&per_page=20`)
+      .get(`https://api.punkapi.com/v2/beers?page=${page}&per_page=20`)
       .then(response => {
         const { data } = response;
         if (response.status === 200) {

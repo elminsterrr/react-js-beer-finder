@@ -4,7 +4,7 @@ const initialState = {
   isFetching: false,
   beersArray: [],
   errorMessage: '',
-  skip: 0,
+  page: 0,
   limit: 0,
   hasMore: true,
 };
@@ -15,7 +15,7 @@ export default function(state = initialState, action) {
       return {
         ...state,
         isFetching: true,
-        skip: action.skip,
+        page: action.page,
         limit: action.limit,
         hasMore: true,
       };
