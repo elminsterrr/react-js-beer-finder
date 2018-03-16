@@ -24,11 +24,7 @@ class StartApp extends Component {
         <div className="StartApp-container">
           {!this.state.startWasClicked && (
             <div className="StartApp-main">
-              <Button
-                variant="raised"
-                color="primary"
-                onClick={this.handleStartApp}
-              >
+              <Button variant="raised" onClick={this.handleStartApp}>
                 Start Here
               </Button>
             </div>
