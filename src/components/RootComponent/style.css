@@ -33,3 +33,17 @@ body {
 .App-intro {
   font-size: large;
 }
+
+@media (max-width: 500px) {
+  .App-header {
+    background-color: #222;
+    height: 90px;
+    padding-bottom: 33px;
+    color: white;
+  }
+
+  .App-title,
+  .App-subtitle {
+    display: none;
+  }
+}
