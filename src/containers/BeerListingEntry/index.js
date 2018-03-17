@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux';
 import { fetchBeers } from '../../actions/';
 
 import ProgressIndicator from '../../components/ProgressIndicator';
-import ErrorMessage from '../../components/ErrorMessage';
+import FetchErrorMessage from '../../components/FetchErrorMessage';
 import BeerListingScroll from '../BeerListingScroll';
 
 class BeerListingEntry extends Component {
@@ -24,7 +24,7 @@ class BeerListingEntry extends Component {
     }
 
     if (beers.errorMessage) {
-      return <ErrorMessage />;
+      return <FetchErrorMessage />;
     }
 
     return <BeerListingScroll />;

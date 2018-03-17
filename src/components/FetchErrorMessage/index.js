@@ -1,13 +1,13 @@
 import React from 'react';
 import './style.css';
 
-const ErrorMessage = () => (
+const FetchErrorMessage = () => (
   <div>
-    <p className="ErrorMessage-p">
+    <p className="FetchErrorMessage-p">
       Sorry, there was an error while fetching data.
     </p>
     <p>Please try again later.</p>
   </div>
 );
 
-export default ErrorMessage;
+export default FetchErrorMessage;
