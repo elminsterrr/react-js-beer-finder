@@ -33,7 +33,7 @@
   font-family: 'Open Sans', sans-serif;
   font-size: 1.65rem;
   font-weight: 600;
-  color: #000;
+  color: #7a7a7a;
   margin: 35px 0 5px 0;
   text-align: left;
 }
@@ -56,12 +56,30 @@
 }
 
 .BeerProfile-scales {
+  color: #7a7a7a;
   text-align: left;
+}
+
+.BeerProfile-scales-span {
+  font-weight: 800;
+}
+
+.BeerProfile-scales-data {
+  font-weight: 600;
+  color: #989898;
+  margin-right: 10px;
 }
 
 .BeerProfile-description {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.2rem;
-  padding: 10px 50px 10px 0px;
+  color: #989898;
+  padding: 0px 50px 10px 0px;
   text-align: left;
+}
+
+.BeerProfile-brewers-tips{
+  display: block;
+  font-weight: 700;
+  color: #7a7a7a;
 }
