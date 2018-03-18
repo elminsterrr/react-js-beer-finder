@@ -1,8 +1,12 @@
+.redux-lazy-scroll {
+  overflow: hidden !important;
+}
+
 .BeerListingScroll-wrapper {
-  display: grid;
-  margin: 0;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr) ) ;
+  display: flex;
+  align-items: space-between;
+  justify-content: space-between;
+  flex-wrap: wrap;
   background-color: #f7f7f7;
 }
 
@@ -11,21 +15,62 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  color: #fff;
-  border-radius: 5px;
-  padding: 20px;
-  font-size: 150%;
-  width: 320px;
+  padding: 0;
+  width: 200px;
+  background-color: #f7f7f7;
+}
+
+.BeerListItem-h2-and-p-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  padding: 1px;
 }
 
 @media (min-width: 1820px) {
   .BeerListingScroll-wrapper {
-    margin: 0 400px;
+    margin: 0 250px;
   }
 }
 
-@media (min-width: 1620px) {
+@media (min-width: 1745px) {
   .BeerListingScroll-wrapper {
     margin: 0 300px;
+  }
+}
+
+@media (min-width: 1575px) {
+  .BeerListingScroll-wrapper {
+    margin: 0 100px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .BeerListingScroll-wrapper {
+    margin: 0 50px;
+  }
+}
+
+@media (min-width: 825px) {
+  .BeerListingScroll-wrapper {
+    margin: 0;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 500px) {
+  .BeerListingScroll-info-box {
+    padding: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 400px) {
+  .BeerListingScroll-info-box {
+    padding: 0;
+    margin-bottom: 0;
+    width: 320px;
   }
 }

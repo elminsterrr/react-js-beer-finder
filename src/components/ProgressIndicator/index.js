@@ -5,7 +5,7 @@ import './style.css';
 
 const ProgressIndicator = () => (
   <div className="ProgressIndicator-container">
-    Fetching beers...
+    Fetching...
     <div className="ProgressIndicator-circular-progress">
       <CircularProgress style={{ color: blue[500] }} thickness={7} />
     </div>

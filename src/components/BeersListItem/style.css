@@ -1,11 +1,38 @@
 .BeerListItem-main-card {
-  width: 320px;
-  height: 415px;
+  margin: 15px;
+  width: 250px;
+  height: 133px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .BeerListItem-img {
-  height: auto;
-  max-height: 250px;
-  width: auto;
-  max-width: 250px;
+  display: none;
+}
+
+.BeerListItem-h2 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.BeerListItem-p {
+  margin: 0;
+}
+
+@media (min-width: 500px) {
+  .BeerListItem-main-card {
+    margin: 25px;
+    width: 320px;
+    height: 415px;
+  }
+
+  .BeerListItem-img {
+    display: initial;
+    height: auto;
+    max-height: 250px;
+    width: auto;
+    max-width: 250px;
+  }
 }
