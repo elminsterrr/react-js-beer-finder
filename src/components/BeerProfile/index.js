@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Modal } from 'react-router-modal';
 import 'react-router-modal/css/react-router-modal.css';
 import './style.css';
 
@@ -18,15 +17,14 @@ class BeerProfile extends Component {
   }
 
   render() {
+
+    console.log(this.props);
+
     const { id } = this.props.beer;
     return (
       <div>
-        {this.state.show && (
-          <Modal onBackdropClick={this.handleBackClick}>
-            <h3>Child elements</h3>
-            <p>{id}</p>
-          </Modal>
-        )}
+        <h3>Child elements</h3>
+        <p>{id}</p>
       </div>
     );
   }

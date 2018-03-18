@@ -8,21 +8,6 @@ import './style.css';
 import BeerProfile from '../BeerProfile';
 
 class BeerListItem extends Component {
-  constructor(props) {
-    super(props);
-
-    this.beerProfile = this.beerProfile.bind(this);
-  }
-
-  beerProfile() {
-    const { beer } = this.props;
-    return (
-      <div>
-        <BeerProfile beer={beer} />
-      </div>
-    );
-  }
-
   render() {
     const { beer } = this.props;
     let cutStr = '';
@@ -36,7 +21,7 @@ class BeerListItem extends Component {
     return (
       <BrowserRouter>
         <div>
-          <Link to={`/details/${beer.id}`} className="BeerListItem-router-link">
+          <Link className="BeerListItem-link" to={`/details/${beer.id}`}>
             <Card raised className="BeerListItem-main-card">
               <CardContent>
                 <img
@@ -53,10 +38,10 @@ class BeerListItem extends Component {
           </Link>
 
           <ModalRoute
-            className="test-modal test-modal-foo"
             path={`/details/${beer.id}`}
             parentPath="/"
-            component={this.beerProfile}
+            props={this.props}
+            component={BeerProfile}
           />
 
           <ModalContainer />
