@@ -8,6 +8,26 @@ import './style.css';
 import BeerProfile from '../BeerProfile';
 
 class BeerListItem extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      cardRaised: false,
+    };
+    this.handleOnMouseEnter = this.handleOnMouseEnter.bind(this);
+    this.handleOnMouseLeave = this.handleOnMouseLeave.bind(this);
+  }
+
+  handleOnMouseEnter(e) {
+    e.preventDefault();
+    this.setState({ cardRaised: true });
+  }
+
+  handleOnMouseLeave(e) {
+    e.preventDefault();
+    this.setState({ cardRaised: false });
+  }
+
   render() {
     const { beer } = this.props;
     let cutStr = '';
@@ -22,7 +42,12 @@ class BeerListItem extends Component {
       <BrowserRouter>
         <div>
           <Link className="BeerListItem-link" to={`/details/${beer.id}`}>
-            <Card raised className="BeerListItem-main-card">
+            <Card
+              raised={this.state.cardRaised}
+              onMouseEnter={this.handleOnMouseEnter}
+              onMouseLeave={this.handleOnMouseLeave}
+              className="BeerListItem-main-card"
+            >
               <CardContent>
                 <img
                   src={beer.image_url}
