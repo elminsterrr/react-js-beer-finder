@@ -1,3 +1,7 @@
+.redux-lazy-scroll {
+  overflow: hidden !important;
+}
+
 .BeerListingScroll-wrapper {
   display: flex;
   align-items: space-between;
