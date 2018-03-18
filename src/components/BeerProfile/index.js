@@ -9,17 +9,9 @@ class BeerProfile extends Component {
     this.state = {
       show: true,
     };
-    this.handleBackClick = this.handleBackClick.bind(this);
-  }
-
-  handleBackClick() {
-    this.setState({ show: false });
   }
 
   render() {
-
-    console.log(this.props);
-
     const { id } = this.props.beer;
     return (
       <div>
