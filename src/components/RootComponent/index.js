@@ -8,7 +8,7 @@ const RootComponent = () => (
   <div className="App">
     <div>
       <header className="App-header">
-        <h1 className="App-title">The Beer Finder</h1>
+        <h1 className="App-title">BeerFinder</h1>
         <p className="App-subtitle">powered by love for</p>
         <img src={beerLogo} className="App-beer-logo" alt="logo" />
       </header>

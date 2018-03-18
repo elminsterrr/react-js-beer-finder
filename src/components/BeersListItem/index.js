@@ -7,8 +7,8 @@ class BeerListItem extends Component {
     const { beer } = this.props;
     let cutStr = '';
 
-    if (beer.name.length > 28) {
-      cutStr = `${beer.name.slice(0, 27)}...`;
+    if (beer.name.length >= 27) {
+      cutStr = `${beer.name.slice(0, 26)}...`;
     } else {
       cutStr = beer.name;
     }

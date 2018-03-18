@@ -13,11 +13,15 @@
 }
 
 .BeerListItem-h2 {
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.2rem;
+  font-weight: 600;
+  color: #fdc22a;
   margin-bottom: 5px;
 }
 
 .BeerListItem-p {
+  color: #c4c4c4;
   margin: 0;
 }
 
