@@ -6,13 +6,13 @@
 .BeerProfile-main-container {
   display: flex;
   flex-direction:row;
-  width: 740px;
+  width: 792px;
   height: 740px;
 }
 
 .BeerProfile-img-container {
   display: flex;
-  background-color: yellow;
+   /* background-color: yellow; */ /*******************/
 }
 
 .BeerProfile-text-container {
@@ -26,7 +26,7 @@
   max-height: 400px;
   width: auto;
   max-width: 400px;
-  margin: 42px 42px 0 42px;
+  margin: 42px 42px 0 82px;
 }
 
 .BeerProfile-h2-name {
@@ -35,27 +35,33 @@
   font-weight: 600;
   color: #000;
   margin: 35px 0 5px 0;
+  text-align: left;
 }
 
 .BeerProfile-tagline {
   font-size: 1.2rem;
   color: #c4c4c4;
   margin: 0;
+  text-align: left;
 }
 
 .BeerProfile-hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
-  margin: 25px auto;
+  border-top: 2px solid #ccc;
+  margin: 25px 0;
   padding: 0;
   width: 50px;
+}
+
+.BeerProfile-scales {
+  text-align: left;
 }
 
 .BeerProfile-description {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.2rem;
-  padding: 10px 50px;
+  padding: 10px 50px 10px 0px;
   text-align: left;
 }
