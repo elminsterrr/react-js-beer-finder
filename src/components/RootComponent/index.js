@@ -1,8 +1,9 @@
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import beerLogo from './icon/beer.svg';
 import './style.css';
 
-import StartApp from '../StartApp';
+import BeerListingEntry from '../../containers/BeerListingEntry';
 
 const RootComponent = () => (
   <div className="App">
@@ -13,7 +14,9 @@ const RootComponent = () => (
         <img src={beerLogo} className="App-beer-logo" alt="logo" />
       </header>
       <div className="App-start">
-        <StartApp />
+        <Router>
+          <BeerListingEntry />
+        </Router>
       </div>
     </div>
   </div>
