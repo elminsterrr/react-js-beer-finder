@@ -5,7 +5,7 @@ import { BrowserRouter, Link } from 'react-router-dom';
 import 'react-router-modal/css/react-router-modal.css';
 import './style.css';
 
-import BeerProfile from '../BeerProfile';
+import BeerProfile from '../../containers/BeerProfile';
 
 class BeerListItem extends Component {
   constructor(props) {

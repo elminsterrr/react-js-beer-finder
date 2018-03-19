@@ -9,7 +9,7 @@ import {
 
 const initialState = {
   isFetching: false,
-  isFetchingSimiliar: false,
+  isFetchingSimilar: false,
   beersArray: [],
   similarBeersArray: [],
   errorMessage: '',
@@ -45,18 +45,18 @@ export default function(state = initialState, action) {
     case REQUEST_SIMILAR:
       return {
         ...state,
-        isFetchingSimiliar: true,
+        isFetchingSimilar: true,
       };
     case SIMILAR_SUCCESS:
       return {
         ...state,
-        isFetchingSimiliar: false,
-        similarBeersArray: [ ...action.beers],
+        isFetchingSimilar: false,
+        similarBeersArray: [...action.beers],
       };
     case SIMILAR_FAILURE:
       return {
         ...state,
-        isFetching: false,
+        isFetchingSimilar: false,
         errorMessage: action.errorMessage,
       };
     default:

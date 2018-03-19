@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import 'react-router-modal/css/react-router-modal.css';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { findSimilarBeers } from '../../actions/';
 import './style.css';
 
+import ProgressIndicator from '../../components/ProgressIndicator';
 import SimilarBeers from '../../containers/SimilarBeers';
 
 class BeerProfile extends Component {
@@ -15,6 +19,13 @@ class BeerProfile extends Component {
 
   componentDidMount() {
     document.body.classList.add('BeerProfile-modal-open');
+
+    const { ibu, abv, ebc } = this.props.beer;
+    const floorIbu = Math.floor(ibu);
+    const floorAbv = Math.floor(abv);
+    const floorEbc = Math.floor(ebc);
+
+    this.props.findSimilarBeers(floorIbu, floorAbv, floorEbc);
   }
 
   componentWillUnmount() {
@@ -23,12 +34,13 @@ class BeerProfile extends Component {
 
   render() {
     const { beer } = this.props;
+    const { isFetchingSimilar, errorMessage } = this.props.beers;
+
     return (
       <div className="BeerProfile-main-container">
         <div className="BeerProfile-img-container">
           <img src={beer.image_url} className="BeerProfile-img" alt="beer" />
         </div>
-
         <div className="BeerProfile-text-container">
           <h2 className="BeerProfile-h2-name">{beer.name}</h2>
           <p className="BeerProfile-tagline">{beer.tagline}</p>
@@ -47,11 +59,22 @@ class BeerProfile extends Component {
             {beer.brewers_tips}
           </p>
           <p className="BeerProfile-try">You should also try:</p>
-          <SimilarBeers beer={beer} />
+          {isFetchingSimilar && <ProgressIndicator />}
+          {!isFetchingSimilar && !errorMessage && <SimilarBeers beer={beer} />}
         </div>
       </div>
     );
   }
 }
 
-export default BeerProfile;
+function mapStateToProps(state) {
+  return {
+    beers: state.beers,
+  };
+}
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ findSimilarBeers }, dispatch);
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(BeerProfile);

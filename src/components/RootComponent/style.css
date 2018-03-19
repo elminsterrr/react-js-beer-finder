@@ -3,24 +3,24 @@ body {
   background-color: #f7f7f7;
 }
 
-.App {
+.RootComponent {
   font-family: Arial;
   text-align: center;
 }
 
-.App-beer-logo {
+.RootComponent-beer-logo {
   height: 80px;
   padding: 10px;
 }
 
-.App-header {
+.RootComponent-header {
   background-color: #222;
   height: 160px;
   padding: 20px;
   color: white;
 }
 
-.App-title {
+.RootComponent-title {
   font-family: 'Open Sans', sans-serif;
   color: #fdc22a;
   font-weight: 600;
@@ -29,26 +29,26 @@ body {
   margin: 0;
 }
 
-.App-subtitle {
+.RootComponent-subtitle {
   font-size: 0.8em;
   font-style: italic;
   margin-top: 0;
 }
 
-.App-intro {
+.RootComponent-intro {
   font-size: large;
 }
 
 @media (max-width: 500px) {
-  .App-header {
+  .RootComponent-header {
     background-color: #222;
     height: 90px;
     padding-bottom: 33px;
     color: white;
   }
 
-  .App-title,
-  .App-subtitle {
+  .RootComponent-title,
+  .RootComponent-subtitle {
     display: none;
   }
 }
