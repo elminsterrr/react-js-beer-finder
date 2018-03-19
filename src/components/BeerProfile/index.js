@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import 'react-router-modal/css/react-router-modal.css';
 import './style.css';
 
+import SimilarBeers from '../../containers/SimilarBeers';
+
 class BeerProfile extends Component {
   constructor(props) {
     super(props);
@@ -40,10 +42,12 @@ class BeerProfile extends Component {
             <span className="BeerProfile-scales-data">{beer.ebc}</span>
           </p>
           <p className="BeerProfile-description">{beer.description}</p>
-          <p className="BeerProfile-description">
+          <p className="BeerProfile-description-tips">
             <span className="BeerProfile-brewers-tips">Brewers tips:</span>{' '}
             {beer.brewers_tips}
           </p>
+          <p className="BeerProfile-try">You should also try:</p>
+          <SimilarBeers beer={beer} />
         </div>
       </div>
     );

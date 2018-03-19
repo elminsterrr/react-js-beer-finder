@@ -1,0 +1,15 @@
+.SimilarBeersItem-main-container {
+  margin: 0 15px;
+}
+
+.SimilarBeersItem-img {
+  height: auto;
+  max-height: 100px;
+  width: auto;
+  max-width: 100px;
+  margin: 10px 42px 0px 42px;
+}
+
+.SimilarBeersItem-p {
+  font-weight: 700;
+}

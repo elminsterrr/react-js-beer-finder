@@ -7,16 +7,14 @@
   display: flex;
   flex-direction:row;
   width: 792px;
-  height: 740px;
+  height: 900px;
 }
 
 .BeerProfile-img-container {
   display: flex;
-   /* background-color: yellow; */ /*******************/
 }
 
 .BeerProfile-text-container {
-  /* background-color: blue; */ /*******************/
   width: 534px;
 }
 
@@ -76,10 +74,29 @@
   color: #989898;
   padding: 0px 50px 10px 0px;
   text-align: left;
+  margin: 0 0 20px 0;
+}
+
+.BeerProfile-description-tips {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  color: #989898;
+  padding: 0px 50px 10px 0px;
+  text-align: left;
+  margin: 0 0 25px 0;
 }
 
 .BeerProfile-brewers-tips{
   display: block;
   font-weight: 700;
   color: #7a7a7a;
+}
+
+.BeerProfile-try {
+  font-size: 1.2rem;
+  display: block;
+  font-weight: 700;
+  color: #7a7a7a;
+  text-align: left;
+  margin: 10px 0 0 0;
 }
