@@ -1,7 +1,3 @@
-.SimilarBeersItem-main-container {
-  margin: 0 15px;
-}
-
 .SimilarBeersItem-img {
   height: auto;
   max-height: 100px;
@@ -22,4 +18,23 @@
 
 .SimilarBeersItem-li {
   text-align: left;
+}
+
+
+.SimilarBeersItem-main-container {
+  display: none;
+  margin: 0 15px;
+}
+
+/* for screens larger then 791px */
+
+@media (min-width: 792px) {
+  .SimilarBeersItem-just-text {
+    display: none;
+  }
+
+  .SimilarBeersItem-main-container {
+    display: flex;
+    flex-direction: column;
+  }
 }

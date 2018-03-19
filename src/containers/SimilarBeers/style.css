@@ -11,3 +11,12 @@
   padding: 0px 50px 10px 0px;
   text-align: left;
 }
+
+
+/* for screens larger then 791px */
+
+@media (min-width: 792px) {
+  .SimilarBeers-main-container {
+    flex-direction: row;
+  }
+}

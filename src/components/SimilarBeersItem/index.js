@@ -22,8 +22,8 @@ class SimilarBeersItem extends Component {
             alt="beer"
             className="SimilarBeersItem-img"
           />
+          <p className="SimilarBeersItem-p">{cutStr}</p>
           <div>
-            <p className="SimilarBeersItem-p">{cutStr}</p>
           </div>
         </div>
       </div>
