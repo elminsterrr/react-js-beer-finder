@@ -117,11 +117,18 @@
   height: 500px;
 }
 
-.BeerProfile-try {
-  display: none;
+.BeerProfile-try-container {
+  text-align: left;
 }
 
-.BeerProfile-similar-container {
+.BeerProfile-try {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #7a7a7a;
+}
+
+.SimilarBeersItem-main-container {
   display: none;
 }
 

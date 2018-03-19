@@ -58,7 +58,9 @@ class BeerProfile extends Component {
             <span className="BeerProfile-brewers-tips">Brewers tips:</span>{' '}
             {beer.brewers_tips}
           </p>
-          <p className="BeerProfile-try">You should also try:</p>
+          <div className="BeerProfile-try-container">
+            <p className="BeerProfile-try">You should also try:</p>
+          </div>
           {isFetchingSimilar && <ProgressIndicator />}
           {!isFetchingSimilar &&
             !errorMessage && (

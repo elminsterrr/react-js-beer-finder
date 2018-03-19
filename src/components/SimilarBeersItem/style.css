@@ -13,3 +13,13 @@
 .SimilarBeersItem-p {
   font-weight: 700;
 }
+
+.SimilarBeersItem-just-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  color: #989898;
+}
+
+.SimilarBeersItem-li {
+  text-align: left;
+}

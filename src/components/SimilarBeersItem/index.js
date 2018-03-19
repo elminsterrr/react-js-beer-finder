@@ -12,10 +12,19 @@ class SimilarBeersItem extends Component {
       cutStr = beer.name;
     }
     return (
-      <div className="SimilarBeersItem-main-container">
-        <img src={beer.image_url} alt="beer" className="SimilarBeersItem-img" />
-        <div>
-          <p className="SimilarBeersItem-p">{cutStr}</p>
+      <div>
+        <div className="SimilarBeersItem-just-text">
+          <li className="SimilarBeersItem-li">{cutStr}</li>
+        </div>
+        <div className="SimilarBeersItem-main-container">
+          <img
+            src={beer.image_url}
+            alt="beer"
+            className="SimilarBeersItem-img"
+          />
+          <div>
+            <p className="SimilarBeersItem-p">{cutStr}</p>
+          </div>
         </div>
       </div>
     );
