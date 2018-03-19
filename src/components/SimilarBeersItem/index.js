@@ -6,8 +6,8 @@ class SimilarBeersItem extends Component {
     const { beer } = this.props;
     let cutStr = '';
 
-    if (beer.name.length >= 15) {
-      cutStr = `${beer.name.slice(0, 14)}...`;
+    if (beer.name.length >= 14) {
+      cutStr = `${beer.name.slice(0, 13)}...`;
     } else {
       cutStr = beer.name;
     }
@@ -22,8 +22,8 @@ class SimilarBeersItem extends Component {
             alt="beer"
             className="SimilarBeersItem-img"
           />
-          <p className="SimilarBeersItem-p">{cutStr}</p>
           <div>
+            <p className="SimilarBeersItem-p">{cutStr}</p>
           </div>
         </div>
       </div>

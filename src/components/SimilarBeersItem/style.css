@@ -26,6 +26,7 @@
   margin: 0 15px;
 }
 
+
 /* for screens larger then 791px */
 
 @media (min-width: 792px) {
@@ -36,5 +37,14 @@
   .SimilarBeersItem-main-container {
     display: flex;
     flex-direction: column;
+    margin: 0;
+  }
+
+  .SimilarBeersItem-img {
+    height: auto;
+    max-height: 125px;
+    width: auto;
+    max-width: 60px;
+    margin: 10px 42px 0px 42px;
   }
 }
