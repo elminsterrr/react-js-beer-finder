@@ -29,7 +29,6 @@
   padding: 1px;
 }
 
-
 /* for screens larger then 1799px */
 @media (min-width: 1820px) {
   .BeerListingScroll-wrapper {

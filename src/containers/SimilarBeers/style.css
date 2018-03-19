@@ -6,12 +6,11 @@
 
 .SimilarBeers-nothing-found {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.2rem;
+  font-size: 0.95rem;
   color: #989898;
   padding: 0px 50px 10px 0px;
   text-align: left;
 }
-
 
 /* for screens larger then 791px */
 
