@@ -17,61 +17,31 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
-        "Fetching beers...",
-        <div
-          className="ProgressIndicator-circular-progress"
->
-          <CircularProgress
-                    max={100}
-                    min={0}
-                    mode="indeterminate"
-                    size={70}
-                    thickness={8}
-                    value={0}
-          />
-</div>,
-      ],
+      "children": <WithStyles(CircularProgress)
+        style={
+                Object {
+                        "color": "#fbc02d",
+                      }
+        }
+        thickness={7}
+/>,
       "className": "ProgressIndicator-container",
     },
     "ref": null,
-    "rendered": Array [
-      "Fetching beers...",
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": <CircularProgress
-            max={100}
-            min={0}
-            mode="indeterminate"
-            size={70}
-            thickness={8}
-            value={0}
-/>,
-          "className": "ProgressIndicator-circular-progress",
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "style": Object {
+          "color": "#fbc02d",
         },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "max": 100,
-            "min": 0,
-            "mode": "indeterminate",
-            "size": 70,
-            "thickness": 8,
-            "value": 0,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        "type": "div",
+        "thickness": 7,
       },
-    ],
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -80,61 +50,31 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": Array [
-          "Fetching beers...",
-          <div
-            className="ProgressIndicator-circular-progress"
->
-            <CircularProgress
-                        max={100}
-                        min={0}
-                        mode="indeterminate"
-                        size={70}
-                        thickness={8}
-                        value={0}
-            />
-</div>,
-        ],
+        "children": <WithStyles(CircularProgress)
+          style={
+                    Object {
+                              "color": "#fbc02d",
+                            }
+          }
+          thickness={7}
+/>,
         "className": "ProgressIndicator-container",
       },
       "ref": null,
-      "rendered": Array [
-        "Fetching beers...",
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": <CircularProgress
-              max={100}
-              min={0}
-              mode="indeterminate"
-              size={70}
-              thickness={8}
-              value={0}
-/>,
-            "className": "ProgressIndicator-circular-progress",
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "style": Object {
+            "color": "#fbc02d",
           },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "max": 100,
-              "min": 0,
-              "mode": "indeterminate",
-              "size": 70,
-              "thickness": 8,
-              "value": 0,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          "type": "div",
+          "thickness": 7,
         },
-      ],
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
       "type": "div",
     },
   ],

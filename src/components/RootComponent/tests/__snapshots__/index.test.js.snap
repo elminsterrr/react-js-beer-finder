@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App renders correctly 1`] = `
+exports[`RootComponent renders correctly 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
@@ -19,31 +19,33 @@ ShallowWrapper {
     "props": Object {
       "children": <div>
         <header
-                className="App-header"
+                className="RootComponent-header"
         >
                 <h1
-                        className="App-title"
+                        className="RootComponent-title"
                 >
-                        The Beer Finder
+                        BeerFinder
                 </h1>
                 <p
-                        className="App-subtitle"
+                        className="RootComponent-subtitle"
                 >
                         powered by love for
                 </p>
                 <img
                         alt="logo"
-                        className="App-beer-logo"
+                        className="RootComponent-beer-logo"
                         src="beer.svg"
                 />
         </header>
         <div
-                className="App-start"
+                className="RootComponent-start"
         >
-                <StartApp />
+                <BrowserRouter>
+                        <Connect(BeerListingEntry) />
+                </BrowserRouter>
         </div>
 </div>,
-      "className": "App",
+      "className": "RootComponent",
     },
     "ref": null,
     "rendered": Object {
@@ -53,28 +55,30 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <header
-            className="App-header"
+            className="RootComponent-header"
 >
             <h1
-                        className="App-title"
+                        className="RootComponent-title"
             >
-                        The Beer Finder
+                        BeerFinder
             </h1>
             <p
-                        className="App-subtitle"
+                        className="RootComponent-subtitle"
             >
                         powered by love for
             </p>
             <img
                         alt="logo"
-                        className="App-beer-logo"
+                        className="RootComponent-beer-logo"
                         src="beer.svg"
             />
 </header>,
           <div
-            className="App-start"
+            className="RootComponent-start"
 >
-            <StartApp />
+            <BrowserRouter>
+                        <Connect(BeerListingEntry) />
+            </BrowserRouter>
 </div>,
         ],
       },
@@ -87,22 +91,22 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <h1
-                className="App-title"
+                className="RootComponent-title"
 >
-                The Beer Finder
+                BeerFinder
 </h1>,
               <p
-                className="App-subtitle"
+                className="RootComponent-subtitle"
 >
                 powered by love for
 </p>,
               <img
                 alt="logo"
-                className="App-beer-logo"
+                className="RootComponent-beer-logo"
                 src="beer.svg"
 />,
             ],
-            "className": "App-header",
+            "className": "RootComponent-header",
           },
           "ref": null,
           "rendered": Array [
@@ -111,11 +115,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "The Beer Finder",
-                "className": "App-title",
+                "children": "BeerFinder",
+                "className": "RootComponent-title",
               },
               "ref": null,
-              "rendered": "The Beer Finder",
+              "rendered": "BeerFinder",
               "type": "h1",
             },
             Object {
@@ -124,7 +128,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "powered by love for",
-                "className": "App-subtitle",
+                "className": "RootComponent-subtitle",
               },
               "ref": null,
               "rendered": "powered by love for",
@@ -136,7 +140,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "alt": "logo",
-                "className": "App-beer-logo",
+                "className": "RootComponent-beer-logo",
                 "src": "beer.svg",
               },
               "ref": null,
@@ -151,17 +155,29 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <StartApp />,
-            "className": "App-start",
+            "children": <BrowserRouter>
+              <Connect(BeerListingEntry) />
+</BrowserRouter>,
+            "className": "RootComponent-start",
           },
           "ref": null,
           "rendered": Object {
             "instance": null,
             "key": undefined,
             "nodeType": "class",
-            "props": Object {},
+            "props": Object {
+              "children": <Connect(BeerListingEntry) />,
+            },
             "ref": null,
-            "rendered": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
             "type": [Function],
           },
           "type": "div",
@@ -179,31 +195,33 @@ ShallowWrapper {
       "props": Object {
         "children": <div>
           <header
-                    className="App-header"
+                    className="RootComponent-header"
           >
                     <h1
-                              className="App-title"
+                              className="RootComponent-title"
                     >
-                              The Beer Finder
+                              BeerFinder
                     </h1>
                     <p
-                              className="App-subtitle"
+                              className="RootComponent-subtitle"
                     >
                               powered by love for
                     </p>
                     <img
                               alt="logo"
-                              className="App-beer-logo"
+                              className="RootComponent-beer-logo"
                               src="beer.svg"
                     />
           </header>
           <div
-                    className="App-start"
+                    className="RootComponent-start"
           >
-                    <StartApp />
+                    <BrowserRouter>
+                              <Connect(BeerListingEntry) />
+                    </BrowserRouter>
           </div>
 </div>,
-        "className": "App",
+        "className": "RootComponent",
       },
       "ref": null,
       "rendered": Object {
@@ -213,28 +231,30 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <header
-              className="App-header"
+              className="RootComponent-header"
 >
               <h1
-                            className="App-title"
+                            className="RootComponent-title"
               >
-                            The Beer Finder
+                            BeerFinder
               </h1>
               <p
-                            className="App-subtitle"
+                            className="RootComponent-subtitle"
               >
                             powered by love for
               </p>
               <img
                             alt="logo"
-                            className="App-beer-logo"
+                            className="RootComponent-beer-logo"
                             src="beer.svg"
               />
 </header>,
             <div
-              className="App-start"
+              className="RootComponent-start"
 >
-              <StartApp />
+              <BrowserRouter>
+                            <Connect(BeerListingEntry) />
+              </BrowserRouter>
 </div>,
           ],
         },
@@ -247,22 +267,22 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <h1
-                  className="App-title"
+                  className="RootComponent-title"
 >
-                  The Beer Finder
+                  BeerFinder
 </h1>,
                 <p
-                  className="App-subtitle"
+                  className="RootComponent-subtitle"
 >
                   powered by love for
 </p>,
                 <img
                   alt="logo"
-                  className="App-beer-logo"
+                  className="RootComponent-beer-logo"
                   src="beer.svg"
 />,
               ],
-              "className": "App-header",
+              "className": "RootComponent-header",
             },
             "ref": null,
             "rendered": Array [
@@ -271,11 +291,11 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "The Beer Finder",
-                  "className": "App-title",
+                  "children": "BeerFinder",
+                  "className": "RootComponent-title",
                 },
                 "ref": null,
-                "rendered": "The Beer Finder",
+                "rendered": "BeerFinder",
                 "type": "h1",
               },
               Object {
@@ -284,7 +304,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "powered by love for",
-                  "className": "App-subtitle",
+                  "className": "RootComponent-subtitle",
                 },
                 "ref": null,
                 "rendered": "powered by love for",
@@ -296,7 +316,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "alt": "logo",
-                  "className": "App-beer-logo",
+                  "className": "RootComponent-beer-logo",
                   "src": "beer.svg",
                 },
                 "ref": null,
@@ -311,17 +331,29 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": <StartApp />,
-              "className": "App-start",
+              "children": <BrowserRouter>
+                <Connect(BeerListingEntry) />
+</BrowserRouter>,
+              "className": "RootComponent-start",
             },
             "ref": null,
             "rendered": Object {
               "instance": null,
               "key": undefined,
               "nodeType": "class",
-              "props": Object {},
+              "props": Object {
+                "children": <Connect(BeerListingEntry) />,
+              },
               "ref": null,
-              "rendered": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
               "type": [Function],
             },
             "type": "div",
