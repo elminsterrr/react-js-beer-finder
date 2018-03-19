@@ -8,12 +8,6 @@
 Open a Terminal and run:
 
 ```sh
-cd react-js-beer-finder
-```
-
-and run:
-
-```sh
 npm install
 ```
 
