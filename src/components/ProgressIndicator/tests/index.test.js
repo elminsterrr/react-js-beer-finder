@@ -3,15 +3,15 @@ import { shallow } from 'enzyme';
 import ProgressIndicator from '../';
 
 describe('ProgressIndicator', () => {
-  const progressInd = shallow(<ProgressIndicator />);
+  const wrapper = shallow(<ProgressIndicator />);
 
   it('renders correctly', () => {
-    expect(progressInd).toMatchSnapshot();
+    expect(wrapper).toMatchSnapshot();
   });
 
   it('renders `CircularProgress` indicator', () => {
     expect(
-      progressInd.find('.ProgressIndicator-circular-progress').children().length
+      wrapper.find('.ProgressIndicator-container').children().length
     ).toEqual(1);
   });
 });

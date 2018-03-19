@@ -1,19 +1,22 @@
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import beerLogo from './icon/beer.svg';
 import './style.css';
 
-import StartApp from '../StartApp';
+import BeerListingEntry from '../../containers/BeerListingEntry';
 
 const RootComponent = () => (
-  <div className="App">
+  <div className="RootComponent">
     <div>
-      <header className="App-header">
-        <h1 className="App-title">BeerFinder</h1>
-        <p className="App-subtitle">powered by love for</p>
-        <img src={beerLogo} className="App-beer-logo" alt="logo" />
+      <header className="RootComponent-header">
+        <h1 className="RootComponent-title">BeerFinder</h1>
+        <p className="RootComponent-subtitle">powered by love for</p>
+        <img src={beerLogo} className="RootComponent-beer-logo" alt="logo" />
       </header>
-      <div className="App-start">
-        <StartApp />
+      <div className="RootComponent-start">
+        <Router>
+          <BeerListingEntry />
+        </Router>
       </div>
     </div>
   </div>

@@ -9,13 +9,13 @@ import BeerListingEntry from '../';
 const store = createStore(reducers);
 
 describe('BeerListingEntry', () => {
-  const beerListingEntry = shallow(
+  const wrapper = shallow(
     <Provider store={store}>
       <BeerListingEntry />
     </Provider>
   );
 
   it('renders correctly', () => {
-    expect(beerListingEntry).toMatchSnapshot();
+    expect(wrapper).toMatchSnapshot();
   });
 });

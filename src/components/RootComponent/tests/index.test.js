@@ -1,15 +1,15 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import App from '../';
+import RootComponent from '../';
 
-describe('App', () => {
-  const app = shallow(<App />);
+describe('RootComponent', () => {
+  const wrapper = shallow(<RootComponent />);
 
   it('renders correctly', () => {
-    expect(app).toMatchSnapshot();
+    expect(wrapper).toMatchSnapshot();
   });
 
-  it('renders `App-start` children', () => {
-    expect(app.find('.App-start').children().length).toEqual(1);
+  it('renders `RootComponent` children', () => {
+    expect(wrapper.find('.RootComponent').children().length).toEqual(1);
   });
 });

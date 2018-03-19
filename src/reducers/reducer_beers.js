@@ -1,8 +1,17 @@
-import { FETCH_REQUEST, FETCH_SUCCESS, FETCH_FAILURE } from '../actions';
+import {
+  FETCH_REQUEST,
+  FETCH_SUCCESS,
+  FETCH_FAILURE,
+  REQUEST_SIMILAR,
+  SIMILAR_SUCCESS,
+  SIMILAR_FAILURE,
+} from '../actions';
 
 const initialState = {
   isFetching: false,
+  isFetchingSimilar: false,
   beersArray: [],
+  similarBeersArray: [],
   errorMessage: '',
   page: 0,
   limit: 0,
@@ -32,6 +41,23 @@ export default function(state = initialState, action) {
         isFetching: false,
         errorMessage: action.errorMessage,
         hasMore: false,
+      };
+    case REQUEST_SIMILAR:
+      return {
+        ...state,
+        isFetchingSimilar: true,
+      };
+    case SIMILAR_SUCCESS:
+      return {
+        ...state,
+        isFetchingSimilar: false,
+        similarBeersArray: [...action.beers],
+      };
+    case SIMILAR_FAILURE:
+      return {
+        ...state,
+        isFetchingSimilar: false,
+        errorMessage: action.errorMessage,
       };
     default:
       return state;
