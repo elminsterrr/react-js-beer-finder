@@ -34,3 +34,7 @@ Start testing by typing:
 ```sh
 npm run test
 ```
+
+### Mobile
+
+Tested for min. screen width 360px

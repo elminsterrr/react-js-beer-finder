@@ -1,3 +1,4 @@
+/*
 .BeerProfile-modal-open {
   height: 100%;
   overflow: hidden;
@@ -5,7 +6,6 @@
 
 .react-router-modal__modal {
   overflow:auto;
-  /* height: 500px; */
 }
 
 .BeerProfile-main-container {
@@ -108,4 +108,106 @@
 
 .SimilarBeers-main-container {
   margin-bottom: 25px;
+}
+
+*/
+
+.react-router-modal__modal {
+  overflow:auto;
+  height: 500px;
+}
+
+.BeerProfile-try {
+  display: none;
+}
+
+.BeerProfile-similar-container {
+  display: none;
+}
+
+.BeerProfile-main-container {
+  display: flex;
+  flex-direction:row;
+  width: 320px;
+  height: 640px;
+}
+
+.BeerProfile-img {
+  display: initial;
+  height: auto;
+  max-height: 100px;
+  width: auto;
+  max-width: 100px;
+  margin: 15px 15px 0 15px;
+}
+
+.BeerProfile-h2-name {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #7a7a7a;
+  margin: 35px 0 5px 0;
+  text-align: left;
+}
+
+.BeerProfile-tagline {
+  font-size: 0.8rem;
+  color: #c4c4c4;
+  margin: 15px 0;
+  text-align: left;
+}
+
+.BeerProfile-hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #ccc;
+  margin: 15px 0;
+  padding: 0;
+  width: 50px;
+}
+
+.BeerProfile-description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  color: #989898;
+  padding: 0px 50px 10px 0px;
+  text-align: left;
+  margin: 0 0 20px 0;
+}
+
+.BeerProfile-description-tips {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  color: #989898;
+  padding: 0px 50px 10px 0px;
+  text-align: left;
+  margin: 0 0 25px 0;
+}
+
+.BeerProfile-scales {
+  font-size: 0.9rem;
+  color: #7a7a7a;
+  text-align: left;
+}
+
+.BeerProfile-scales-span {
+  font-weight: 800;
+}
+
+.BeerProfile-scales-data {
+  font-weight: 600;
+  color: #989898;
+  margin-right: 10px;
+}
+
+.BeerProfile-brewers-tips{
+  display: block;
+  font-weight: 700;
+  color: #7a7a7a;
+}
+
+.BeerProfile-text-container {
+  width: 320px;
+  height: 640px;
 }

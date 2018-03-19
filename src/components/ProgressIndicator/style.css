@@ -1,5 +1,17 @@
 .ProgressIndicator-container {
+  display: none;
+}
+.ProgressIndicator-container {
   width: 15%;
   margin: 5px auto 25px auto;
   text-align: center;
+}
+
+@media (min-width: 792px) {
+  .ProgressIndicator-container {
+    display: initial;
+    width: 15%;
+    margin: 5px auto 25px auto;
+    text-align: center;
+  }
 }
