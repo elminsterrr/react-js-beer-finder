@@ -3,6 +3,11 @@
   overflow: hidden;
 }
 
+.react-router-modal__modal {
+  overflow:auto;
+  /* height: 500px; */
+}
+
 .BeerProfile-main-container {
   display: flex;
   flex-direction:row;
@@ -99,4 +104,8 @@
   color: #7a7a7a;
   text-align: left;
   margin: 10px 0 0 0;
+}
+
+.SimilarBeers-main-container {
+  margin-bottom: 25px;
 }

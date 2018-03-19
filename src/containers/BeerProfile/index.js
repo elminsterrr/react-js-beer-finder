@@ -60,7 +60,12 @@ class BeerProfile extends Component {
           </p>
           <p className="BeerProfile-try">You should also try:</p>
           {isFetchingSimilar && <ProgressIndicator />}
-          {!isFetchingSimilar && !errorMessage && <SimilarBeers beer={beer} />}
+          {!isFetchingSimilar &&
+            !errorMessage && (
+              <div className="BeerProfile-similar-container">
+                <SimilarBeers beer={beer} />
+              </div>
+            )}
         </div>
       </div>
     );
